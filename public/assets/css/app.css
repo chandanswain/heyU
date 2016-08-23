@@ -1,0 +1,76 @@
+/*! 
+    Author: Atul
+    Date: 20/02/2016
+*/
+.login-area{
+    padding:10px;
+    display: inline-block;
+ }
+.login-area input{
+    display: inline-block !important;
+ }
+.float-right{
+    float:right;
+}
+.float-left{
+    float:left;
+}
+.inputText{
+    border: none;
+    border-bottom:#ccc solid 1px ;
+    background:none;
+    display: inline-block !important;
+}
+.loginpage-area, .signup-area{
+    background: #bbddf7;
+  
+}
+ {
+    background: #bbddf7 none repeat scroll 0 0;
+}
+.login-bg{
+    padding:40px;
+}
+.register-area{
+ background: #fff;
+}
+.logo{
+    padding: 40px;
+}
+
+.radioLabel{
+  display: block;
+  color: #999999;
+}
+.radiobt{
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: normal !important;
+}
+.radiobt input{
+    margin-right: 6px;
+}
+.footer{
+  background-color:#fff;   
+    padding:15px 20px;
+    position: relative;
+    z-index: 1;
+}
+.footer p{
+  font-size: 12px;
+}
+.footer p a{
+  margin-right: 15px;
+    color: #999;
+}
+.footer .copyright{
+    color: #ccc;
+}
+.boxShadow{
+     box-shadow: 0 0 5px #666;
+}
+.contenerWidth100{
+ width:100%;
+}
+
+.clear{ clear:both}
