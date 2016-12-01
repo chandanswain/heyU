@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Social;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
@@ -66,7 +67,7 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
@@ -74,5 +75,14 @@ class AuthController extends Controller
             'dob'=>$data['dob'],
             'gender'=>$data['gender']
         ]);
+
+        $lastInsertId  = $user->id;
+        $social = Social::create([
+            'user_id'       => $lastInsertId,
+            'first_name'    => $data['first_name'],
+            'last_name'     => $data['last_name']
+        ]);
+
+        return $user;
     }
 }

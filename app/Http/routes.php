@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::auth();
+Route::group(['middleware' => ['web']], function () {
+    Route::auth();
 
-Route::get('/home', 'HomeController@index');
-Route::get('/profile', 'HomeController@profile');
+    Route::get('/home', 'HomeController@index');
+    Route::get('/profile', 'HomeController@profile');
+
+});
+Route::post('/home/savePost', 'HomeController@savePost');

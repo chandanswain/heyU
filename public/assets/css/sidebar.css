@@ -20,14 +20,15 @@ body{position:relative;}
 
 /************************* neeraj Style Start Here *********************************/
 #hoe-left-panel {
-  background: #f4f4f4 none repeat scroll 0 0;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-  color: #4e4e4e;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+  color: #5c5c5c;
   float: left;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 6px;
   z-index: 100;
+}
+.profile-box {
+  background: #fff;
 }
 .likeletest > li {
   list-style: outside none none;
@@ -36,11 +37,12 @@ body{position:relative;}
   padding-left: 0;
 }
 #hoe-left-panel .profile-box {
-  
-    min-height: 50px;
-    padding: 5px 15px;
-    position: relative;
+  height: auto;
+  min-height: 50px;
+  padding: 4px;
+  position: relative;
 }
+
 #hoe-left-panel .profile-box .media a img {
   height: 80px;
   width: 80px;
@@ -72,10 +74,14 @@ body{position:relative;}
     border-top: 0px solid #efefef;
 }
 #hoe-left-panel .panel-list > li > a {
-  color: #505050;
+  color: #000000;
   font-size: 13px;
   font-weight: 500;
 }
+aside {
+  margin-top: 7px;
+}
+
 #hoe-left-panel .panel-list > li:last-child > a {
     border-bottom: 1px solid #efefef;
 }
